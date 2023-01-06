@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="scannerTicket.css">
 <style>
 </style>
-<script src="scannerTicket.js"></script>
+<script src="scannerTicket.js"> 
+</script>
 <body>
     <btn onclick = "showStudent()"> show student </btn>
     <btn onclick = "createStudent('August', 'Hao', false)"> load studnet</btn>
@@ -16,5 +17,15 @@
         <div id = "acceptance"> Null </div>
     </div>
 
+
+    <center>
+        <div class = "cam">
+          <video id="vid"></video>
+        </div>
+        <br />
+        <button id="but" autoplay>
+          Open WebCam
+        </button>
+      </center>
 </body>
 </html>
