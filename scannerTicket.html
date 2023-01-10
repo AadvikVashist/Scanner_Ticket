@@ -9,23 +9,33 @@
 <script src="scannerTicket.js"> 
 </script>
 <body>
-    <btn onclick = "showStudent()"> show student </btn>
-    <btn onclick = "createStudent('August', 'Hao', false)"> load studnet</btn>
+
+    <div class = "title"> RIVER HILL DANCE </div>
+    <div class = "camHolder"> 
+        <center id = "cam" class = "camera">
+            <div class = "cam">
+              <video id="vid"></video>
+            </div>
+            <br />
+            <button id="but" autoplay>
+              Open WebCam
+            </button>
+            <button onclick = "showStudent()"> Display student</button>
+          </center>
+    </div>
     <div id = "student" class = "student">
-        <div id = "lastName"> lastName </div>
-        <div id = "firstName"> firstName </div>
-        <div id = "acceptance"> Null </div>
+        <img src = "blank-profile-picture-973460_1280.webp" class = "pfpPic"> </img>
+        <div class = "bio" id = "bio">
+            <div class = "name"> 
+                <div id = "lastName"> lastName &nbsp </div>
+                <div id = "firstName"> firstName &nbsp </div>
+            </div>
+            <div id = "acceptance"> Null </div>
+            <button onclick = "createStudent('Kody', 'Johnson', false)"> reject </button> 
+            <button onclick = "createStudent('August', 'Hao', true)"> accept </button>
+        </div>
     </div>
 
-
-    <center>
-        <div class = "cam">
-          <video id="vid"></video>
-        </div>
-        <br />
-        <button id="but" autoplay>
-          Open WebCam
-        </button>
-      </center>
+    <!-- <div class = "screenshot"> test </div> -->
 </body>
 </html>

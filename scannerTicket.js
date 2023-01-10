@@ -1,18 +1,29 @@
 function showStudent() {
-    var x = document.getElementById("student");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
+  var x = document.getElementById("student");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
   }
+}
+
+function showCam() {
+  var x = document.getElementById("cam");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
 function createStudent(firstName, lastName, accepted) {
-  document.getElementById("lastName").innerHTML = lastName;
-  document.getElementById("firstName").innerHTML = firstName;
+  document.getElementById("lastName").innerHTML = lastName + ",&nbsp";
+  document.getElementById("firstName").innerHTML = firstName + "&nbsp";
   if (accepted){
     document.getElementById("acceptance").innerHTML = "Accepted!";
+    document.getElementById("bio").style.backgroundColor = "lightgreen";
   } else {
     document.getElementById("acceptance").innerHTML = "REJECTED!";
+    document.getElementById("bio").style.backgroundColor = "red";
 
   }
 }

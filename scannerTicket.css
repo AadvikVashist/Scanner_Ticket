@@ -1,9 +1,59 @@
-.student{
-    width: 60rem;
-    height: 10rem;
-    background-color: lightcoral;
+body{
+    background-color: lavender;
+}
+.title{
+    font-family: Helvetica;
+    color: darkblue;
     display: flex;
     justify-content: center;
+    font-weight: 500;
+    font-size: 5rem;
+}
+.camHolder{
+    display:flex;
+    position: relative;
+    justify-content: center;
+    background-color: lavenderblush;
+    padding-left: 10%;
+    padding-right:10%;
+    width: 80%;
+    height: 30rem;
+}
+.student{
+    width: 40rem;
+    height: 10rem;
+    background-color: black;
+    display: none;
+    justify-content: flex-start;
+
+}
+.pfpPic{
+    height: 8rem;
+    width: 8rem;
+    padding: 1rem;
+}
+.name{
+    display:flex;
+    justify-content: flex-start;
+}
+.bio{
+    background-color: yellow;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 8rem;
+    width: 38rem;
+    padding: 1rem;
+    font-size: 3rem;
+}
+
+.camera{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .cam{
@@ -11,9 +61,16 @@
     height: 400px;
     border: 2px solid black;
     position: relative;
+    /* transform: scaleX(-1); */
   }
   video {
     width: 500px;
     height: 400px;
     object-fit: cover;
   }
+
+.screenshot{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
