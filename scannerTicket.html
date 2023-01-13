@@ -6,25 +6,30 @@
 <link rel="stylesheet" href="scannerTicket.css">
 <style>
 </style>
-<script src="scannerTicket.js"> 
-</script>
 <body>
 
     <div class = "title"> RIVER HILL DANCE </div>
     <div class = "camHolder"> 
-        <center id = "cam" class = "camera">
-            <div class = "cam">
+            <!-- <div class = "cam">
               <video id="vid"></video>
             </div>
             <br />
             <button id="but" autoplay>
               Open WebCam
             </button>
-            <button onclick = "showStudent()"> Display student</button>
-          </center>
+          -->
+            <div>
+             <video id="video" width="533" height="400" autoplay class="vid"></video>
+              <div>
+                <button id="start-camera" class="camButton">Start Camera</button>
+                <button id="click-photo" class="camButton">Click Photo</button>
+              </div>
+            </div>
     </div>
+    <canvas id="canvas" class="canvas" width="320" height="240"></canvas>
     <div id = "student" class = "student">
         <img src = "blank-profile-picture-973460_1280.webp" class = "pfpPic"> </img>
+        <button onclick = "showStudent()"> Display student</button> 
         <div class = "bio" id = "bio">
             <div class = "name"> 
                 <div id = "lastName"> lastName &nbsp </div>
@@ -37,5 +42,7 @@
     </div>
 
     <!-- <div class = "screenshot"> test </div> -->
+  <script src="scannerTicket.js"> 
+  </script>
 </body>
 </html>
